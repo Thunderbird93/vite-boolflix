@@ -1,5 +1,6 @@
 <script>
-import {store} from "../data/store"
+import {store} from "../data/store";
+
 export default {
     name: "AppHeader",
     data(){
@@ -11,23 +12,26 @@ export default {
 
 <template>
   <header>
-    <div class="logo">
-        LOGO
-    </div>
     <div class="cerca">
-        <input type="text">
-        <select class="form-select" aria-label="Default select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-</select>
+        <div class="logo">
+            LOGO
+        </div>
+        <div>
+            <input type="text">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Film & Serie</option>
+            <option value="1">Film</option>
+            <option value="2">Serie</option>
+            </select>
+        </div>
     </div>
-
   </header>
 </template>
 
 <style lang="scss" scoped>
-
+    .cerca{
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
